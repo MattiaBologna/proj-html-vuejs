@@ -21,7 +21,7 @@ export default {
                 <li class="account__page">My Account</li>
                 <li>
                     <font-awesome-icon :icon="['fas', 'cart-shopping']" />
-                    Cart
+                    CART
                 </li>
             </ul>
         </div>

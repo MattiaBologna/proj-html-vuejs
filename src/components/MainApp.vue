@@ -15,6 +15,19 @@ export default {
                 <button class="jumbo__button">VIEW ALL</button>
                 <button class="jumbo__button">LOOKBOOK</button>
             </div>
+
+            <div class="badges">
+                <div class="badge">
+                    <div class="atlassian">
+                        <font-awesome-icon :icon="['fab', 'atlassian']" />
+                    </div>
+                    <p>Demos</p>
+                </div>
+                <div class="badge">
+                    <p class="badge__price">39$</p>
+                    <p>On Sale</p>
+                </div>
+            </div>
         </section>
 
 
@@ -33,6 +46,7 @@ export default {
     background-size: cover;
     background-position: center;
     color: $white;
+    position: relative;
 }
 
 .jumbo__title {
@@ -61,5 +75,41 @@ export default {
     padding: 20px 40px;
     background-color: rgba($white, 0.15);
     font-size: 16px;
+}
+
+.badges {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.badge {
+    background-color: $white;
+    color: $dark-grey;
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px -1px 10px $grey;
+}
+
+.atlassian {
+    background-color: $dark-grey;
+    color: $white;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+.badge__price {
+    color: #7AC58D;
+    font-weight: 600;
+    font-size: 20px;
 }
 </style>
