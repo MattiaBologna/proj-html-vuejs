@@ -24,5 +24,10 @@ export default {
 
 
 <style lang="scss">
-@use './components/style/general'
+@use './components/style/general';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 </style>
