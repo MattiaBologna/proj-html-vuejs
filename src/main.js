@@ -15,8 +15,9 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faAtlassian } from '@fortawesome/free-brands-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faFacebookF, faInstagram, faTwitter, faYoutube, faCartShopping, faMagnifyingGlass, faAtlassian)
+library.add(faFacebookF, faInstagram, faTwitter, faYoutube, faCartShopping, faMagnifyingGlass, faAtlassian, faChevronDown)
 
 const app = createApp(App)
 app.component('font-awesome-icon', FontAwesomeIcon)

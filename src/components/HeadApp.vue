@@ -31,12 +31,22 @@ export default {
             <img src="/Logos/classic_shop_logo1x.png" alt="avada logo" class="logo">
             <nav class="head__navbar">
                 <div class="head__pages">
-                    <a class="head__link" href="#">Home</a>
-                    <a class="head__link" href="#">Shop</a>
-                    <a class="head__link" href="#">Products</a>
-                    <a class="head__link" href="#">Categories</a>
+                    <a class="head__link" href="#">Home
+                        <font-awesome-icon :icon="['fas', 'chevron-down']" />
+                    </a>
+                    <a class="head__link" href="#">Shop
+                        <font-awesome-icon :icon="['fas', 'chevron-down']" />
+                    </a>
+                    <a class="head__link" href="#">Products
+                        <font-awesome-icon :icon="['fas', 'chevron-down']" />
+                    </a>
+                    <a class="head__link" href="#">Categories
+                        <font-awesome-icon :icon="['fas', 'chevron-down']" />
+                    </a>
                     <a class="head__link" href="#">News</a>
-                    <a class="head__link" href="#">Elements</a>
+                    <a class="head__link" href="#">Elements
+                        <font-awesome-icon :icon="['fas', 'chevron-down']" />
+                    </a>
                 </div>
                 <div class="shopnow__button">SHOP NOW!</div>
                 <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
@@ -109,5 +119,10 @@ export default {
 .head__pages {
     display: flex;
     gap: 40px;
+    font-weight: 100;
+
+    a>* {
+        font-size: 10px;
+    }
 }
 </style>
