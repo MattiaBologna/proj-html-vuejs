@@ -44,7 +44,7 @@ export default {
                 <div class="card__bottom">
                     <div class="product__name">Black Leather Suit</div>
                     <div class="product__infos">Men, Jackets</div>
-                    <div class="product__price">176$</div>
+                    <div class="product__price"><span class="original__price">200$</span> 176$</div>
                 </div>
             </li>
             <li class="card">
@@ -176,6 +176,11 @@ export default {
 .product__infos {
     font-weight: 100;
     font-size: 14px;
+}
+
+.original__price {
+    font-size: 12px;
+    text-decoration: line-through;
 }
 
 .product__price {
