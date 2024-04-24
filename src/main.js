@@ -18,8 +18,9 @@ import { faAtlassian } from '@fortawesome/free-brands-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faSquareCheck } from '@fortawesome/free-regular-svg-icons'
 
-library.add(faFacebookF, faInstagram, faTwitter, faYoutube, faCartShopping, faMagnifyingGlass, faAtlassian, faChevronDown, faEnvelope, faStar)
+library.add(faFacebookF, faInstagram, faTwitter, faYoutube, faCartShopping, faMagnifyingGlass, faAtlassian, faChevronDown, faEnvelope, faStar, faSquareCheck)
 
 const app = createApp(App)
 app.component('font-awesome-icon', FontAwesomeIcon)

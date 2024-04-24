@@ -1,6 +1,10 @@
 <script>
 export default {
+    data() {
+        return {
 
+        }
+    }
 }
 </script>
 
@@ -18,7 +22,11 @@ export default {
         <ul class="featured__products">
             <li class="card">
                 <div class="card__top">
-                    <img src="/products/black_elegant_leather_jacket-200x260.jpg" alt="black leather jacket">
+                    <img class="card__image" src="/products/black_elegant_leather_jacket-200x260.jpg"
+                        alt="black leather jacket">
+                    <div class="card__hover">
+                        <font-awesome-icon class="hover__check" :icon="['far', 'square-check']" />
+                    </div>
                 </div>
                 <div class="card__bottom">
                     <div class="product__name">Black Leather Jacket</div>
@@ -28,7 +36,10 @@ export default {
             </li>
             <li class="card">
                 <div class="card__top">
-                    <img src="/products/black_leather_suit-200x260.jpg" alt="black leather jacket">
+                    <img class="card__image" src="/products/black_leather_suit-200x260.jpg" alt="black leather jacket">
+                    <div class="card__hover">
+                        <font-awesome-icon class="hover__check" :icon="['far', 'square-check']" />
+                    </div>
                 </div>
                 <div class="card__bottom">
                     <div class="product__name">Black Leather Suit</div>
@@ -38,7 +49,11 @@ export default {
             </li>
             <li class="card">
                 <div class="card__top">
-                    <img src="/products/blue_jacket_and_white_stripe_tee-200x260.jpg" alt="black leather jacket">
+                    <img class="card__image" src="/products/blue_jacket_and_white_stripe_tee-200x260.jpg"
+                        alt="black leather jacket">
+                    <div class="card__hover">
+                        <font-awesome-icon class="hover__check" :icon="['far', 'square-check']" />
+                    </div>
                 </div>
                 <div class="card__bottom">
                     <div class="product__name">Blue Jacket & Stripe Tee</div>
@@ -48,7 +63,11 @@ export default {
             </li>
             <li class="card">
                 <div class="card__top">
-                    <img src="/products/modern_black_leather_suit-200x260.jpg" alt="black leather jacket">
+                    <img class="card__image" src="/products/modern_black_leather_suit-200x260.jpg"
+                        alt="black leather jacket">
+                    <div class="card__hover">
+                        <font-awesome-icon class="hover__check" :icon="['far', 'square-check']" />
+                    </div>
                 </div>
                 <div class="card__bottom">
                     <div class="product__name">Modern Black Leather Suit</div>
@@ -106,6 +125,10 @@ export default {
     font-weight: 700;
 }
 
+.category:hover {
+    background-color: $white;
+}
+
 .featured__products {
     display: flex;
     justify-content: space-between;
@@ -114,6 +137,37 @@ export default {
 }
 
 // CARDS
+.card__top {
+    position: relative;
+}
+
+.card__hover {
+    background: rgb(83, 136, 213);
+    background: linear-gradient(180deg, rgba(83, 136, 213, 1) 0%, rgba(240, 166, 211, 1) 100%);
+    height: 260px;
+    width: 200px;
+    opacity: 0;
+    position: absolute;
+    transform: translateY(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .card__hover {
+    opacity: 95%;
+}
+
+.hover__check {
+    padding: 20px;
+    color: white;
+    background-color: $dark-grey;
+    border-radius: 999px;
+}
+
+.hover__check:hover {
+    background-color: black;
+}
 
 .product__name {
     font-weight: 800;
