@@ -6,14 +6,16 @@ export default {
 
 
 <template>
-    <section class="subscription__section container">
-        <div class="sub__writings">
-            <font-awesome-icon class="letter__icon" :icon="['far', 'envelope']" />
-            <p class="sub__text">Subscribe now and get special offers</p>
-        </div>
-        <div class="sub__input">
-            <input class="mail__input" type="mail" placeholder="Insert your email">
-            <button class="sub__button">Send</button>
+    <section class="subscription__section">
+        <div class="container">
+            <div class="sub__writings">
+                <font-awesome-icon class="letter__icon" :icon="['far', 'envelope']" />
+                <p class="sub__text">Subscribe now and get special offers</p>
+            </div>
+            <div class="sub__input">
+                <input class="mail__input" type="mail" placeholder="Insert your email">
+                <button class="sub__button">Send</button>
+            </div>
         </div>
     </section>
 </template>
@@ -24,12 +26,9 @@ export default {
 @import '.././style/partials/variables.scss';
 
 .container {
+    height: 240px;
     max-width: 1170px;
     margin: 0 auto;
-}
-
-.subscription__section {
-    height: 240px;
     display: flex;
     align-items: center;
     justify-content: space-between;
