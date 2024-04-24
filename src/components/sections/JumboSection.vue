@@ -7,7 +7,6 @@ export default {
 
 
 <template>
-    <!-- JUMBO SECTION -->
     <section class="jumbo__section">
         <h1 class="jumbo__title">Brand New Arrivals</h1>
         <h2 class="jumbo__subtitle">NEW COLLECTION FROM NEW YORK</h2>

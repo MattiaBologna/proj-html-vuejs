@@ -90,7 +90,7 @@ export default {
 }
 
 .featured__section {
-    margin-top: 130px;
+    padding-top: 130px;
     border-top: 1px solid rgba($grey, 0.9);
     display: flex;
     flex-direction: column;
