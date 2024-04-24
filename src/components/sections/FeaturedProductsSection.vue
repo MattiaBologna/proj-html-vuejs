@@ -22,7 +22,7 @@ export default {
         <ul class="featured__products">
             <li class="card">
                 <div class="card__top">
-                    <img class="card__image" src="/products/black_elegant_leather_jacket-200x260.jpg"
+                    <img class="card__image" src="/products/black_elegant_leather_jacket.jpg"
                         alt="black leather jacket">
                     <div class="card__hover">
                         <font-awesome-icon class="hover__check" :icon="['far', 'square-check']" />
@@ -36,7 +36,7 @@ export default {
             </li>
             <li class="card">
                 <div class="card__top">
-                    <img class="card__image" src="/products/black_leather_suit-200x260.jpg" alt="black leather jacket">
+                    <img class="card__image" src="/products/black_leather_suit.jpg" alt="black leather jacket">
                     <div class="card__hover">
                         <font-awesome-icon class="hover__check" :icon="['far', 'square-check']" />
                     </div>
@@ -49,7 +49,7 @@ export default {
             </li>
             <li class="card">
                 <div class="card__top">
-                    <img class="card__image" src="/products/blue_jacket_and_white_stripe_tee-200x260.jpg"
+                    <img class="card__image" src="/products/blue_jacket_and_white_stripe_tee.jpg"
                         alt="black leather jacket">
                     <div class="card__hover">
                         <font-awesome-icon class="hover__check" :icon="['far', 'square-check']" />
@@ -63,8 +63,7 @@ export default {
             </li>
             <li class="card">
                 <div class="card__top">
-                    <img class="card__image" src="/products/modern_black_leather_suit-200x260.jpg"
-                        alt="black leather jacket">
+                    <img class="card__image" src="/products/modern_black_leather_suit.jpg" alt="black leather jacket">
                     <div class="card__hover">
                         <font-awesome-icon class="hover__check" :icon="['far', 'square-check']" />
                     </div>
@@ -139,6 +138,10 @@ export default {
 // CARDS
 .card__top {
     position: relative;
+}
+
+.card__image {
+    max-width: 200px;
 }
 
 .card__hover {
