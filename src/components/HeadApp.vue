@@ -108,6 +108,10 @@ export default {
     cursor: pointer;
 }
 
+.shopnow__button:hover {
+    filter: grayscale(20%);
+}
+
 // HEADER BOTTOM
 
 .header__bottom {
@@ -131,5 +135,10 @@ export default {
     a>* {
         font-size: 10px;
     }
+}
+
+.head__link:hover {
+    font-weight: 600;
+    font-size: 15px;
 }
 </style>

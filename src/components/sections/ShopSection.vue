@@ -299,9 +299,10 @@ export default {
     max-height: 100px;
     display: flex;
     justify-content: space-between;
-    padding: 14px 0px;
+    padding: 14px 10px;
     border-bottom: 1px solid rgba($color: black, $alpha: 0.1);
     color: $dark-grey;
+    transition: all 0.2s ease;
 
     .card__info {
         display: flex;
@@ -333,5 +334,9 @@ export default {
         margin-right: 5px;
     }
 
+}
+
+.card:hover {
+    scale: 1.2;
 }
 </style>
