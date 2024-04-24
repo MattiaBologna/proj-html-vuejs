@@ -65,10 +65,19 @@ export default {
         min-width: 250px;
     }
 
+    .mail__input:focus {
+        outline: none;
+    }
+
     .sub__button {
+        font-weight: 600;
         background-color: $blue;
         padding: 13px 50px;
         border-radius: 999px;
+    }
+
+    .sub__button:hover {
+        filter: grayscale(20%);
     }
 }
 </style>

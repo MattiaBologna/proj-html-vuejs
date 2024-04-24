@@ -73,6 +73,12 @@ export default {
     font-size: 16px;
 }
 
+.jumbo__button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
 .badges {
     position: absolute;
     top: -10px;

@@ -105,6 +105,7 @@ export default {
     padding: 15px 25px;
     color: $white;
     font-weight: 600;
+    cursor: pointer;
 }
 
 // HEADER BOTTOM

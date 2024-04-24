@@ -86,4 +86,10 @@ export default {
     font-size: 14px;
     font-weight: 600;
 }
+
+.seasons__button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
 </style>
