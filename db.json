@@ -1,0 +1,34 @@
+{
+    "headMenu": [
+        {
+            "name": "Home",
+            "href": "#",
+            "otherLinks": true
+        },
+        {
+            "name": "Shop",
+            "href": "#",
+            "otherLinks": true
+        },
+        {
+            "name": "Products",
+            "href": "#",
+            "otherLinks": true
+        },
+        {
+            "name": "Categories",
+            "href": "#",
+            "otherLinks": true
+        },
+        {
+            "name": "News",
+            "href": "#",
+            "otherLinks": true
+        },
+        {
+            "name": "Elements",
+            "href": "#",
+            "otherLinks": true
+        }
+    ]
+}

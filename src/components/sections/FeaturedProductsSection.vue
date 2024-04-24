@@ -148,7 +148,7 @@ export default {
     width: 200px;
     opacity: 0;
     position: absolute;
-    transform: translateY(-100%);
+    transform: translateY(-101%);
     display: flex;
     justify-content: center;
     align-items: center;

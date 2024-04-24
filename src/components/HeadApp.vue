@@ -1,6 +1,25 @@
 <script>
-export default {
+import { store } from "../store.js";
+import axios from 'axios';
 
+
+export default {
+    data() {
+        return {
+            store
+        }
+    },
+    created() {
+        this.fetchData()
+    },
+    methods: {
+        fetchData() {
+            axios.get('http://localhost:3000/headMenu').then((res) => {
+                store.headMenu = res.data
+                console.log(store.headMenu)
+            })
+        }
+    }
 }
 </script>
 
@@ -31,20 +50,7 @@ export default {
             <img src="/Logos/classic_shop_logo1x.png" alt="avada logo" class="logo">
             <nav class="head__navbar">
                 <div class="head__pages">
-                    <a class="head__link" href="#">Home
-                        <font-awesome-icon :icon="['fas', 'chevron-down']" />
-                    </a>
-                    <a class="head__link" href="#">Shop
-                        <font-awesome-icon :icon="['fas', 'chevron-down']" />
-                    </a>
-                    <a class="head__link" href="#">Products
-                        <font-awesome-icon :icon="['fas', 'chevron-down']" />
-                    </a>
-                    <a class="head__link" href="#">Categories
-                        <font-awesome-icon :icon="['fas', 'chevron-down']" />
-                    </a>
-                    <a class="head__link" href="#">News</a>
-                    <a class="head__link" href="#">Elements
+                    <a v-for="(page, i) in store.headMenu" :key="i" class="head__link" href="#">{{ page.name }}
                         <font-awesome-icon :icon="['fas', 'chevron-down']" />
                     </a>
                 </div>
