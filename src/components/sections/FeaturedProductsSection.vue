@@ -71,7 +71,6 @@ export default {
 }
 
 .featured__section {
-    height: 1036px;
     margin-top: 130px;
     border-top: 1px solid rgba($grey, 0.9);
     display: flex;
@@ -104,12 +103,14 @@ export default {
     padding: 20px 50px;
     background-color: $contrast-white;
     border: 1px solid rgba($grey, 0.2);
+    font-weight: 700;
 }
 
 .featured__products {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    margin-bottom: 210px;
 }
 
 // CARDS
